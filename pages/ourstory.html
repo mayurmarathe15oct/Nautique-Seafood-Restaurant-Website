@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story Page</title>
+    
+    <style>
+
+        body{
+            overflow-x: hidden;
+            
+        }
+
+        .heroImage{
+            background-image: url(../assets/images/grand-opening.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vh;
+            /* width: 1200px; */
+            background-position: center;
+            /* margin-left: 30px; */
+            
+       }
+
+        .logo{
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        .navigationBar{
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0.2);
+            display: flex;
+            height: 100px;
+            
+        }
+
+        .navigationBar ul{
+            text-align: center;
+        }
+
+        .navigationBar ul li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navigationBar ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            font-weight: 600px;
+            padding: 25px;
+        }
+
+        .navigationBar ul li a:hover{
+            background-color: #211b4385;
+        }
+
+        .mainContainer{
+            
+            background-image: url("../assets/images/blue\ background\ photo\ for\ all.jpg");
+            height: fit-content; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .accoladeContainers{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* height: 1900px; */
+            /* width: 1850px; */
+            border: 1px solid rgb(174, 255, 246);
+            background-color: transparent !important;
+            /* margin-left: 20px; */
+            
+            
+        }
+
+        .header1{
+            font-size: 50px;
+            font-weight: bold;
+            /* margin-left: 700px; */
+            text-decoration: underline;
+        }
+        
+        .topContainer{
+            display: inline-flex;
+            height: 400px;
+            /* width: 1800px; */
+            background-color: transparent !important;
+            /* margin-left: 25px; */
+        }
+        
+
+        .container1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 360px;
+            width:600px;
+            background-color: transparent !important;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 360px;
+            width:600px; 
+            background-color: transparent !important;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        .container3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 360px;
+            width:600px; 
+            background-color: transparent !important;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .header2{
+            font-size: 40px;
+            font-weight: bold;
+            /* margin-left: 170px; */
+            color: black;
+        }
+
+        .para1{
+            font-size: 20px;
+            font-weight: 500;
+            
+        }
+        
+        .header3{
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 80px; 
+        }
+        
+        .image{
+            height: 40px;
+            width: 200px;
+            /* margin-left: 20px; */
+        }
+
+        .chefInformation{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 650px;
+            width: 1150px;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            /* margin-left: 350px; */
+            background-color: transparent !important;
+        }
+
+        .infoContainer{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image2{
+            height: 450px;
+            width: 450px;
+            /* border-radius: 30px 0px 0px 30px; */
+        }
+
+        .bio{
+            height: 450px;
+            width: 450px;
+            background-color: white;
+            /* border-radius: 0px 30px 30px 0px; */
+        }
+
+        .header4{
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 80px;
+            color: black; 
+        }
+
+        .para2{
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+            padding: 20px;
+
+        }
+
+        .footer{
+            background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* border: 1px solid black; */
+            height: 650px;
+            /* width: 100%; */
+            background-position: center;
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+            margin-bottom: 10px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+       
+
+        }
+
+        .socialMedia{
+            /* padding-left: 700px; */
+            /* padding-top: 20px;
+            padding-right: 30px; */
+            font-size: large;
+            
+            
+        }
+
+        .socialMediaLinks{
+            display: flex;
+            padding-left: 30px; 
+            padding-right: 30px;
+
+        
+        }
+
+        .workingHours{
+            /* width: 1100px; */
+            padding-left: 30px;
+            padding-top: 20px;
+            text-wrap: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .facebookIcon{
+            padding-right: 20px;
+        }
+
+        .heading4{
+            text-decoration: underline;
+            font-weight: bold; 
+            font-size: 40px;       
+        }
+
+        .para3{
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: 50px;
+        }
+
+        .heading5{
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 30px;
+
+        }
+
+        .heading6{
+            font-size: 25px;
+            font-weight: 550;
+            margin-left: 50px;
+        }
+
+        .instaHandle{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .container4{
+            padding-left: 50px;
+        }
+
+            
+
+
+        @media only screen and (min-width: 375px)and (max-width: 767px){
+            .mainContainer{
+            
+                background-image: url("../assets/images/blue\ background\ photo\ for\ all.jpg");
+                height: 2500px; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+            }
+
+            .accoladeContainers{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* height: 1350px; */
+                /* width: 1850px; */
+                border: 1px solid rgb(174, 255, 246);
+                background-color: transparent !important;
+                /* margin-left: 20px; */
+                padding: 30px;
+                margin-bottom: 30px;
+            
+            
+            }
+
+            .topContainer{
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                /* width: 1800px; */
+                background-color: transparent !important;
+                /* margin-left: 25px; */
+            }
+
+            .container1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 360px;
+                width:600px;
+                background-color: transparent !important;
+                /* margin-left: 10px; */
+                margin-top: 20px;
+            }
+
+            .container2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 360px;
+                width:600px; 
+                background-color: transparent !important;
+                /* margin-left: 10px; */
+                margin-top: 20px;
+            }
+
+            .container3{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 360px;
+                width:600px; 
+                background-color: transparent !important;
+                /* margin-left: 10px; */
+                margin-top: 20px;
+                margin-right: 10px;
+            }
+
+
+            .header2{
+                font-size: 30px;
+                font-weight: bold;
+                /* margin-left: 170px;  */
+                color: black;
+            }
+
+            .para1{
+                font-size: 20px;
+                font-weight: 500;
+                padding-left: 60px;
+                padding-right: 50px;
+
+                    
+            }
+                
+            .header3{
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 400px;
+            }
+                
+            .image{
+                height: 40px;
+                width: 200px;
+                /* margin-left: 20px; */
+            }
+
+            .header3{
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 220px; 
+            }
+
+            .chefInformation{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 650px;
+                width: 50%;
+                margin-top: 90px;
+                padding-bottom: 40px;
+                /* margin-left: 350px; */
+                background-color: transparent !important;
+            }
+
+            .image2{
+                height: 450px;
+                width: 480px;
+                /* margin-left: 10px; */
+                        
+            }
+
+            .bio{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 500px;
+                width: 480px;
+                background-color: white;
+                        
+            }
+
+            .header4{
+                font-size: 40px;
+                font-weight: bold;
+                /* margin-left: 170px; */
+                color: black; 
+            }
+
+            .para2{
+                font-size: 23px;
+                font-weight: 500;
+                color: black;
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+
+            .infoContainer{
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+            }
+                    
+            
+
+            .reserveButton{
+                height: 80px;
+                width : 250px;
+                background-color: goldenrod;
+                border-radius: 10px;
+                border: 8px double black;
+                margin-top: 30px;
+                /* padding-left: 4px; */
+                        
+                /* margin-left: 200px;  */
+                    
+            }
+
+            .footer{
+                background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* border: 1px solid black; */
+                height: 650px;
+                /* width: 100%; */
+                background-position: center;
+                /* margin-left: 30px; */
+                /* margin-right: 30px; */
+                margin-bottom: 10px ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+       
+
+            }
+
+            .workingHours{
+                /* width: 1100px; */
+                padding-left: 30px;
+                padding-top: 20px;
+                text-wrap: none;
+                font-size: 20px;
+                font-weight: bold;
+            
+            }
+
+            .heading4{
+                font-size: 40px;
+                text-decoration: underline;
+                font-weight: bold; 
+                margin-left: 20px;       
+            }
+
+            .para3{
+                font-size: 25px;
+                font-weight: 500;
+                margin-left: 70px;
+            }
+
+            .heading6{
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 80px;
+            }
+
+            .heading5{
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 30px;
+                margin-left: 40px;
+            }
+
+            .instaHandle{
+                font-weight: bold;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            .socialMediaLinks{
+                display: flex;
+                /* padding-left: 690px; */
+                padding-right: 30px;
+                margin-left: 30px; 
+
+        
+            }
+
+    }
+
+        
+
+    
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="heroImage">
+
+        
+        <div class="navigationBar">
+            <img class="logo" src="../assets/images/NAUTIQUE LOGO final.png" alt="" >
+            <ul>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./ourstory.html">OUR STORY</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <li><a href="./reserve.html">RESERVE</a></li>
+    
+            </ul>
+        
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="accoladeContainers">
+            <h1 class="header1">FROM THE PRESS</h1>
+            
+                <div class="topContainer row">
+                    <div class="container1 col-12 col-md-6 col-lg-4">
+                        <h2 class="header2">Lorem Ipsum</h2> 
+                        <p1 class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed finibus sem. Morbi sagittis imperdiet dolor ut lobortis. Vivamus sit amet diam erat.Etiam eget dui malesuada, varius mi vitae, pulvinar ante. Pellentesque eu mollis libero. Cras luctus, urna consequat aliquam molestie, sem ipsum pharetra tellus, sit amet dignissim nisl purus eget lacus.</p1>
+                        <br>
+                        <img class="image" src="../assets/images/Star-Review-PNG-Clipart.png">
+                        <h3 class="header3">-Lorem Ipsum</h3>
+                    </div>
+                    <div class="container2 col-12 col-md-6 col-lg-4">
+                        <h2 class="header2">Lorem Ipsum</h2> 
+                        <p1 class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed finibus sem. Morbi sagittis imperdiet dolor ut lobortis. Vivamus sit amet diam erat.Etiam eget dui malesuada, varius mi vitae, pulvinar ante. Pellentesque eu mollis libero. Cras luctus, urna consequat aliquam molestie, sem ipsum pharetra tellus, sit amet dignissim nisl purus eget lacus.</p1>
+                        <br>
+                        <img class="image" src="../assets/images/Star-Review-PNG-Clipart.png">
+                        <h3 class="header3">-Lorem Ipsum</h3>
+                    </div>
+                    <div class="container3 col-12 col-md-6 col-lg-4">
+                        <h2 class="header2">Lorem Ipsum</h2> 
+                        <p1 class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed finibus sem. Morbi sagittis imperdiet dolor ut lobortis. Vivamus sit amet diam erat.Etiam eget dui malesuada, varius mi vitae, pulvinar ante. Pellentesque eu mollis libero. Cras luctus, urna consequat aliquam molestie, sem ipsum pharetra tellus, sit amet dignissim nisl purus eget lacus.</p1>
+                        <br>
+                        <img class="image" src="../assets/images/Star-Review-PNG-Clipart.png">
+                        <h3 class="header3">-Lorem Ipsum</h3>
+                    </div>
+                </div>
+                
+            
+        </div>
+        <div class="chefInformation">
+            <div class="infoContainer row">
+               <div class="chefsImage col-12 col-md-6 col-lg-6">
+                  <img class="image2" src="../assets/images/2starchefs.jpg">
+               </div>
+               <div class="bio col-12 col-md-6 col-lg-6">
+                  <h4 class="header4">Lorem Ipsum</h4>
+                  <p class="para2">Nunc sit amet fermentum tellus, eget tempor nunc. Aenean sit amet enim lorem. Quisque bibendum elit quam, non mattis lacus maximus id. Vestibulum porta molestie placerat. In non nisi nec erat consequat laoreet. Proin venenatis dolor ac vehicula consequat. Cras aliquam, turpis id imperdiet elementum, nunc libero consectetur velit, nec consectetur velit lacus vitae felis. Sed orci ante, aliquam eu nulla in, sagittis dignissim justo. Duis efficitur eget ipsum vitae placerat. Ut vel auctor mi.</p>
+               </div>
+            </div>
+
+        </div>
+       
+    </div>
+    <div class="footer">
+        <div class="footerContents row">
+            <div class="workingHours col-12 col-md-6 col-lg-4">
+            <h4 class="heading4">Hours of Operation</h4>
+                <p class="para3">
+                11am - 12midnight
+                <br>
+                (Monday to Sunday)
+                <br>
+                3pm to 6pm
+                <br>
+                (Happy Hours)
+                </p>
+            </div>
+            <div class="copyright col-12 col-md-6 col-lg-4">
+            <h6 class="heading6">Copyright@2023</h6>
+            </div>
+            <div class="container4 col-12 col-md-6 col-lg-4">
+
+                <div class="socialMedia">
+                <h5 class="heading5">Follow us on</h5>
+                <p class="instaHandle">@nautiqueseafood.com</p>
+                </div>
+                <div class="socialMediaLinks">
+                        <div class="facebookIcon"><a  href="https://facebook.com"><img src="../assets/images/icons8-facebook-48.png" width="50px" height="50px"></a></div>
+                        <div class="instagramIcon"><a href="https://instagram.com"><img src="../assets/images/icons8-instagram-48.png" width="50px" height="50px"></a></div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        
+    </div>
+
+
+</body>
+</html>

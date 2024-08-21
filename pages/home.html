@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautique Seafood Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <style>
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .heroImage{
+        background-image: url(../assets/images/beach\ at\ night\ wine\ glasses.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        /* width: 1200px; */
+        background-position: center;
+        /* margin-left: 30px; */
+        
+    }
+
+    .logo{
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
+
+    .navigationBar{
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.2);
+        display: flex;
+        height: 100px;
+        
+    }
+
+    .navigationBar ul{
+        text-align: center;
+    }
+
+    .navigationBar ul li{
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navigationBar ul li a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        font-weight: 600px;
+        padding: 25px;
+    }
+
+    .navigationBar ul li a:hover{
+        background-color: #211b4385;
+    }
+
+    .mainContainer{
+        background-image: url(../assets/images/blue\ background\ photo\ for\ all.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: fit-content;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        
+        /* border: 1px solid white; */
+        /* width:1200px; */
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+       
+        
+        
+    }
+
+    .header1{
+        
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+
+    .oysterDish{
+        /* border: 2px solid black; */
+        height: 300px;
+        width: 420px;
+        margin-right: 90px;
+        /* margin-left: 45px;  */
+        margin-top: 20px;
+    
+        
+    }
+
+    .grillSwordfish{
+        /* border: 2px solid black; */
+        height: 300px;
+        width: 420px;
+        margin-right: 90px;
+        margin-top: 20px;
+    }
+
+    .fishDish{
+        /* border: 2px solid black; */
+        height: 300px;
+        width: 420px;
+        /* margin-right: 30px; */
+        margin-top: 20px;
+    }
+    
+    .billBoard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(2, 21, 42);
+        border: 5px solid goldenrod;
+        height: 650px;
+        /* width: 1200px; */
+        /* margin-left: 80px;  */
+        /* margin-right: 30px; */
+    }
+
+    .partyRoom1{
+        margin-top: 30px;
+        /* margin-left: 250px; */
+        height: 320px;
+        width: 450px;
+        border: 10px solid white;
+    }
+
+    .partyRoom2{
+        margin-top: 30px;
+        margin-left: 10px;
+        height: 320px;
+        width: 450px;
+        border: 10px solid white;
+    }
+    
+    .partyRoom3{
+        margin-top: 30px;
+        margin-left: 10px;
+        height: 320px;
+        width: 450px;
+        border: 10px solid white;
+    }
+
+    .header2{
+        padding-top: 20px;
+        /* padding-left: 650px; */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .button1{
+        height: 110px;
+        width: 250px;
+        background-color: transparent !important;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        /* margin-left: 810px; */
+        margin-top: 20px;
+
+    }
+
+    .buttonName1{
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    
+
+    .patioLook{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1100px;
+        /* width: 1200px; */
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+        /* padding-right: 10px; */
+    }
+
+    .header3{
+        padding-top: 30px;
+        /* padding-left: 520px; */
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+        text-decoration: none !important;
+
+    }
+
+    .patioPic1{
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-left: 175px;
+        height: 750px;
+        /* width: 1070px; */
+        width: 90%;
+        margin-left: 100px;
+        
+        
+    }
+
+    .patioPic2{
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-left: 175px;
+        height: 750px;
+        /* width: 1070px; */
+        width: 90%;
+        margin-left: 100px;
+
+
+    }
+
+
+    .patioPic3{
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-left: 175px;
+        height: 750px;
+        /* width: 1070px; */
+        width: 90%;
+        margin-left: 100px;
+        
+
+    }
+
+    #carouselExample{
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuCallofAction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header7{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 200;
+        /* padding-top: 30px; */
+        margin-left: 20px; 
+        
+        
+    }
+
+    .menuButton{
+        height: 80px;
+        width : 250px;
+        background-color: goldenrod;
+        border-radius: 30px;
+        border: 8px double black;
+        /* margin-left: 850px; */
+        padding-left: 4px;
+        color: black;
+
+
+    }
+
+    .buttonName2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .footer{
+        background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: 1px solid black; */
+        height: 200px;
+        /* width: 100%; */
+        background-position: center;
+        /* margin-left: 30px; */
+        /* margin-right: 30px; */
+        margin-bottom: 10px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+
+    }
+
+    .socialMedia{
+        /* padding-left: 700px; */
+        padding-top: 20px;
+        padding-right: 30px;
+        font-size: large;
+        
+    }
+
+    .socialMediaLinks{
+        display: flex;
+        /* padding-left: 690px; */
+        padding-right: 30px;
+
+       
+    }
+
+    .workingHours{
+        /* width: 1100px; */
+        padding-left: 30px;
+        padding-top: 20px;
+        text-wrap: none;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .facebookIcon{
+        padding-right: 20px;
+    }
+
+    .heading4{
+        text-decoration: underline;
+        font-weight: bold;        
+    }
+
+    .heading5{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .heading6{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .instaHandle{
+        font-weight: bold;
+    }
+
+    @media only screen and (min-width: 375px)and (max-width: 767px){
+        .container1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+            
+            /* border: 1px solid white; */
+            /* width:1200px; */
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+        
+            
+            
+        }
+
+        .header1{
+            
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+
+        .oysterDish{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 420px;
+            margin-left: 55px;
+        
+            
+        }
+
+        .grillSwordfish{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 420px;
+            margin-left: 55px;
+        }
+
+        .fishDish{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 420px;
+            margin-left: 55px;
+            
+        } 
+
+        .billBoard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(2, 21, 42);
+            border: 5px solid goldenrod;
+            height: fit-content;
+            /* width: 1200px; */
+            /* margin-left: 80px;  */
+            /* margin-right: 30px; */
+        }
+
+        .partyRoom1{
+            margin-top: 30px;
+            margin-left: 40px; 
+            height: 320px;
+            width: 450px;
+            border: 10px solid white;
+        }
+
+        .partyRoom2{
+            margin-top: 30px;
+            margin-left: 40px;
+            height: 320px;
+            width: 450px;
+            border: 10px solid white;
+        }
+        
+        .partyRoom3{
+            margin-top: 30px;
+            margin-left: 40px;
+            height: 320px;
+            width: 450px;
+            border: 10px solid white;
+        }
+
+        .header2{
+            padding-top: 20px;
+            /* padding-left: 650px; */
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        .button1{
+            height: 110px;
+            width: 250px;
+            background-color: transparent !important;
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 50px;
+            /* margin-left: 810px; */
+            margin-top: 20px;
+            margin-bottom: 30px;
+
+        }
+
+        .buttonName1{
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+        }
+        
+        .patioLook{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 850px;
+            /* width: 1200px; */
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+            /* padding-right: 10px; */
+        }
+
+        .header3{
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 20px;
+            /* padding-left: 520px; */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-decoration: none !important;
+
+        }
+
+        .patioPic1{
+            border: 2px solid black;
+            margin-top: 20px;
+            /* margin-left: 175px; */
+            height: 350px;
+            /* width: 450px;  */
+             width: 100%;  
+            /* margin-left: 100px;  */
+            
+            
+        }
+
+        .patioPic2{
+            border: 2px solid black;
+            margin-top: 20px;
+            /* margin-left: 175px; */
+            height: 350px;
+            /* width: 1070px; */
+            width:100%;
+            /* margin-left: 100px; */
+
+
+        }
+
+
+        .patioPic3{
+            border: 2px solid black;
+            margin-top: 20px;
+            /* margin-left: 175px; */
+            height: 350px;
+            /* width: 1070px; */
+            width: 100%;
+            /* margin-left: 100px; */
+            
+
+        }
+
+        #carouselExample{
+            padding-right: 20px;
+
+        } 
+
+        .menuCallofAction{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header7{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            font-weight: 200;
+            /* padding-top: 30px; */
+            margin-left: 40px; 
+            
+            
+        }
+
+        .menuButton{
+            height: 80px;
+            width : 250px;
+            background-color: goldenrod;
+            border-radius: 30px;
+            border: 8px double black;
+            /* margin-left: 850px; */
+            padding-left: 4px;
+            color: black;
+
+
+        }
+
+        .buttonName2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .footer{
+            background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* border: 1px solid black; */
+            height: 420px;
+            /* width: 100%; */
+            background-position: center;
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+            margin-bottom: 10px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+       
+
+        }
+
+        .workingHours{
+            /* width: 1100px; */
+            padding-left: 30px;
+            padding-top: 20px;
+            text-wrap: none;
+            font-size: 20px;
+            font-weight: bold;
+           
+        }
+
+        .heading4{
+            font-size: 40px;
+            text-decoration: underline;
+            font-weight: bold; 
+            margin-left: 50px;       
+        }
+
+        .para1{
+            margin-left: 130px;
+        }
+
+        .heading6{
+            font-size: 25px;
+            font-weight: bold;
+            margin-left: 140px;
+        }
+
+        .heading5{
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 150px;
+        }
+
+        .instaHandle{
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 123px;
+        }
+
+        .socialMediaLinks{
+            display: flex;
+           /* padding-left: 690px; */
+           padding-right: 30px;
+           margin-left: 170px;
+
+       
+        }
+
+    }
+    
+
+    
+        
+    
+        
+
+
+    
+  </style>
+
+
+</head>
+<body class="container-fluid">
+    <div class="heroImage">
+
+        
+        <div class="navigationBar">
+            <img class="logo" src="../assets/images/NAUTIQUE LOGO final.png" alt="" >
+            <ul>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./ourstory.html">OUR STORY</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <li><a href="./reserve.html">RESERVE</a></li>
+    
+            </ul>
+        
+        </div>
+    </div>
+
+    <div class="mainContainer">
+
+        <div class="container1">
+        <h1 class="header1">Our Specialities</h1>
+        <div class="seafoodImages row">
+            <img class="oysterDish col-12 col-md-6 col-lg-4" src="../assets/images/delicious-sea-oyster-dish.webp">
+            <img class="grillSwordfish col-12 col-md-6 col-lg-4" src="../assets/images/Marinated_grill_swordfish.jpeg">
+            <img class="fishDish col-12 col-md-6 col-lg-4" src="../assets/images/Fish dish.jpg">
+        </div>
+            
+        </div>
+
+        <div class="billBoard">
+            <div class="partyRoomImages row">
+                <img class="partyRoom1 col-12 col-md-6 col-lg-4" src="../assets/images/Partyroom1.jpg">
+                <img class="partyRoom2 col-12 col-md-6 col-lg-4" src="../assets/images/Partyroom2 .jpg">
+                <img class="partyRoom3 col-12 col-md-6 col-lg-4" src="../assets/images/Partyroom3.jpg">
+            </div>
+
+            <h2 class="header2">Want to book our Party Room?</h2>
+            
+        
+            <button class="button1"><a class="buttonName1" href="../pages/reserve.html">RESERVE</a></button>
+                
+            
+
+            
+        </div>
+
+        <div class="patioLook">
+            <h3 class="header3">Enjoy our Elegant Patio Vibe with Sunset</h3>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner row">
+                    <div class="carousel-item active">
+                        <img class="patioPic1 col-12 col-md-6 col-lg-4" src="../assets/images/car1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="patioPic2 col-12 col-md-6 col-lg-4" src="../assets/images/car2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="patioPic3 col-12 col-md-6 col-lg-4" src="../assets/images/car3.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="menuCallofAction">
+                <h7 class="header7">WANT TO EXPLORE OUR MENU?</h7>
+                <br>
+                <button class="menuButton"><a class="buttonName2" href="./menu.html">CLICK HERE</a>   
+                </button>
+            
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footerContents row">
+            <div class="workingHours col-12 col-md-6 col-lg-4">
+            <h4 class="heading4">Hours of Operation</h4>
+                <p class="para1">
+                11am - 12midnight
+                <br>
+                (Monday to Sunday)
+                <br>
+                3pm to 6pm
+                <br>
+                (Happy Hours)
+                </p>
+            </div>
+            <div class="copyright col-12 col-md-6 col-lg-4">
+            <h6 class="heading6">Copyright@2023</h6>
+            </div>
+            <div class="container3 col-12 col-md-6 col-lg-4">
+
+                <div class="socialMedia">
+                <h5 class="heading5">Follow us on</h5>
+                <p class="instaHandle">@nautiqueseafood.com</p>
+                </div>
+                <div class="socialMediaLinks">
+                        <div class="facebookIcon"><a  href="https://facebook.com"><img src="../assets/images/icons8-facebook-48.png" width="50px" height="50px"></a></div>
+                        <div class="instagramIcon"><a href="https://instagram.com"><img src="../assets/images/icons8-instagram-48.png" width="50px" height="50px"></a></div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        
+    </div>
+
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+</body>
+</html>

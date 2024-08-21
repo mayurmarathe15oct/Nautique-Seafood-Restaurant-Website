@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  <style>
+
+        body{
+            overflow-x: hidden;
+                
+        }
+        
+        .heroImage{
+            background-image: url(../assets/images/bar\ and\ restaurant\ layout.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80vh;
+            /* width: 1200px; */
+            background-position: center;
+            /* margin-left: 30px; */
+            
+        }
+
+        .logo{
+            height: 250px;
+            width: 250px;
+            padding: 5px 10px 10px 10px;
+        }
+
+        .navigationBar{
+            width: 100%;
+            background-color: rgb(0, 0, 0, 0.2);
+            display: flex;
+            height: 100px;
+            
+        }
+
+        .navigationBar ul{
+            text-align: center;
+        }
+
+        .navigationBar ul li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navigationBar ul li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            font-weight: 600px;
+            padding: 25px;
+        }
+
+        .navigationBar ul li a:hover{
+            background-color: #211b4385;
+        }
+        
+        .container3{
+            background-image: url(../assets/images/blue\ background\ photo\ for\ all.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid black;
+            height: 1050px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                
+        }
+        
+        .reservationForm{
+            background-image: url(../assets/images/Reservation\ form\ background\ img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 7px double black;
+            border-radius: 10px;
+            height: 750px;
+            /* width: 650px; */
+            margin-top: 30px;
+            margin-bottom: 20px;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+            /* margin-left: 250px; */
+                
+                
+        }
+
+        .formName{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            padding:105px;
+            padding-top: 70px;
+            padding-left: 130px;
+            text-decoration: underline;
+                
+        }
+
+        .inputElements{
+            padding-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .partyRoomHeader{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            font-weight: bold;
+
+        }
+            
+        .reserveButton {
+            height: 60px;
+            width: 180px;
+            background-color: goldenrod;
+            border-radius: 10px;
+            border : 8px double black;
+            margin-left: 100px;
+            margin-bottom: 50px;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+                
+        }
+
+        .questionBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+                
+                
+        }
+
+        .para1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: bolder;
+            position: relative;
+            /* margin-left: 90px; */
+            justify-content: center;
+                
+        }
+            
+        .contactButton{
+            /* margin-left: 150px; */
+            border-color: black;
+            border: 8px double;
+            border-radius: 10px;
+            height: 70px;
+            background-color: rgb(255, 179, 0);
+            
+        }
+
+        .buttonName1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .footer{
+            background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* border: 1px solid black; */
+            height: 250px;
+            /* width: 100%; */
+            background-position: center;
+            /* margin-left: 30px; */
+            /* margin-right: 30px; */
+            margin-bottom: 10px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+       
+
+        }
+
+        .socialMedia{
+            /* padding-left: 700px; */
+            padding-top: 20px;
+            padding-right: 30px;
+            font-size: large;
+            
+        }
+
+        .socialMediaLinks{
+            display: flex;
+            /* padding-left: 690px; */
+            padding-right: 30px;
+
+        
+        }
+
+        .workingHours{
+            /* width: 1100px; */
+            padding-left: 30px;
+            padding-top: 20px;
+            text-wrap: none;
+            
+        }
+
+        .facebookIcon{
+            padding-right: 20px;
+        }
+
+        .heading4{
+            text-decoration: underline;
+            font-weight: bold; 
+            font-size: 40px;       
+        }
+
+        .para2{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .heading5{
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .heading6{
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .instaHandle{
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+
+        @media only screen and (min-width: 375px)and (max-width: 767px){
+            .container3{
+                height: fit-content;
+            }
+
+            .reservationForm{
+               
+                height: 790px;
+                width: 90%; 
+                margin-top: 30px;
+                margin-bottom: 20px;
+                /* margin-left: 250px; */
+               
+                
+            }
+
+            .formName{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                /* padding:105px; */
+                /* padding-top: 70px; */
+                padding-right: 20px;
+                text-decoration: underline;
+                
+            }
+
+            .reserveButton {
+                height: 60px;
+                /* width: 180px; */
+                background-color: goldenrod;
+                border-radius: 10px;
+                border : 8px double black;
+                /* margin-left: 100px; */
+                /* margin-bottom: 50px; */
+                font-size: xx-large;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+
+            .inputElements{
+                padding-left: 25px; 
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+                font-weight: bold;
+            }
+
+            .para1{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                font-weight: bold;
+                position: relative;
+                /* margin-left: 90px; */
+                justify-content: center;
+                
+            }
+
+            .footer{
+                background-image: url(../assets/images/San-Diego-Panorama\ 2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* border: 1px solid black; */
+                height: 420px;
+                /* width: 100%; */
+                background-position: center;
+                /* margin-left: 30px; */
+                /* margin-right: 30px; */
+                margin-bottom: 10px ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+       
+
+            }
+
+            .workingHours{
+                /* width: 1100px; */
+                padding-left: 30px;
+                padding-top: 20px;
+                text-wrap: none;
+                font-size: 20px;
+                font-weight: bold;
+            
+            }
+
+            .heading4{
+                font-size: 40px;
+                text-decoration: underline;
+                font-weight: bold; 
+                margin-left: 50px;       
+            }
+
+            .para2{
+                /* margin-left: 130px; */
+                margin-left: 130px;
+            }
+
+            .heading6{
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 140px;
+            }
+
+            .heading5{
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 30px;
+                margin-left: 150px;
+            }
+
+            .instaHandle{
+                font-weight: bold;
+                font-size: 20px;
+                margin-left: 123px;
+            }
+
+            .socialMediaLinks{
+                display: flex;
+                /* padding-left: 690px; */
+                padding-right: 30px;
+                margin-left: 170px;
+
+        
+            }
+        }
+        
+
+
+
+
+    
+
+
+    
+  </style>
+
+
+</head>
+<body class="container-fluid">
+    <div class="heroImage">
+
+        
+        <div class="navigationBar">
+            <img class="logo" src="../assets/images/NAUTIQUE LOGO final.png" alt="" >
+            <ul>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./ourstory.html">OUR STORY</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <li><a href="./reserve.html">RESERVE</a></li>
+    
+            </ul>
+        
+        </div>
+    </div>
+    <div class="container3">
+        <div class="reservationForm">
+            <h16 class="formName">Reservations</h16>
+            <br><br>
+            <div class="inputElements">
+                <label for="fullname">FULL NAME :</label>
+                <input id="fullname" type="text" placeholder="Enter your full name">
+                <br><br>
+                <label for="email">EMAIL :</label>
+                <input id="email" type="text" placeholder="Enter your email-id">
+                <br><br>
+                <label for="phoneNumber">PHONE NUMBER :</label>
+                <input id="email" type="text" placeholder="Enter your phone number">
+                <br>
+                <hr>
+                <br>
+                <label for="numberOfPax">NUMBER OF PAX :</label>
+                <input id="numberOfPax" type="text" placeholder="Pax ?">
+                <br><br>
+                <label for="specialOccasion">ANY SPECIAL OCCASION ? :</label>
+                <input id="specialOccasion" type="text" placeholder="Special occasion?">
+                <br><br>
+                <label for="timeSlot">TIME:</label>
+                <input id="timeSlot" type="text" placeholder="00:00 AM/PM">
+                <br><br>
+                <label for="date">DATE:</label>
+                <input id="timeSlot" type="text" placeholder="mm/dd/yyyy">
+                <br>
+                <hr>
+                <br>
+                <label for="groupSize">GROUP SIZE:</label>
+                <input id="groupSize" type="text" placeholder="Enter Your Group Size">
+                <br><br>
+                <h17 class="partyRoomHeader">Want to Book our Party Room?</h17>
+                <br>
+                <label for="yes">YES</label>
+                <input type="radio" name="partyRoomOption" id="yes">
+    
+                <label for="no">NO</label>
+                <input type="radio" name="partyRoomOption" id="no">
+                <br><br>
+                <button class="reserveButton">RESERVE</button>
+                
+
+
+
+                
+                
+            </div>
+           
+
+        </div>
+        
+
+        <div class="questionBox">
+            <p1 class="para1">ANY QUESTIONS? </p1>
+            <br>
+                <button class="contactButton"><a class="buttonName1" href="../pages/contactus.html">CONTACT US</a>   
+                </button>
+            
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footerContents row">
+            <div class="workingHours col-12 col-md-6 col-lg-4">
+            <h4 class="heading4">Hours of Operation</h4>
+                <p class="para2">
+                11am - 12midnight
+                <br>
+                (Monday to Sunday)
+                <br>
+                3pm to 6pm
+                <br>
+                (Happy Hours)
+                </p>
+            </div>
+            <div class="copyright col-12 col-md-6 col-lg-4">
+            <h6 class="heading6">Copyright@2023</h6>
+            </div>
+            <div class="container4 col-12 col-md-6 col-lg-4">
+
+                <div class="socialMedia">
+                <h5 class="heading5">Follow us on</h5>
+                <p class="instaHandle">@nautiqueseafood.com</p>
+                </div>
+                <div class="socialMediaLinks">
+                        <div class="facebookIcon"><a  href="https://facebook.com"><img src="../assets/images/icons8-facebook-48.png" width="50px" height="50px"></a></div>
+                        <div class="instagramIcon"><a href="https://instagram.com"><img src="../assets/images/icons8-instagram-48.png" width="50px" height="50px"></a></div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        
+    </div>
+
+
+
+</body>
+</html>
